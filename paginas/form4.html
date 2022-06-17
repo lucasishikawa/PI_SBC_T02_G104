@@ -1,0 +1,63 @@
+<html>
+
+<head>
+<title>::Restaurante ARTE DO TEMPERO::</title>
+
+<script language="JavaScript">
+function Pesquisa()
+{
+  var Cel = document.Formulario.CELULAR.value;
+  var Nome = document.Formulario.NOME.value;
+  if (Nome == '' || Cel == '')
+    {
+      alert('Informe um dos dados para a pesquisa.');
+      return false;
+    }
+  else 
+    {
+      if (Nome !== 'Bruna' || Cel !== '11984654657')
+        {
+	  document.Formulario.PESQUISA.value = "Cliente não cadastrado.";
+        }
+      else
+        {
+      	  document.Formulario.PESQUISA.value = "Bruna - (11)98465-4657";
+        }
+    }
+}
+
+</script>
+</head>
+
+<body>
+  
+<form name="Formulario" method="post"> 
+
+<hr>
+<font color=#A52A2A size=3>Consulta cliente</font>
+<hr>
+
+<br><br>
+
+<input type="button" value="Por celular" onClick="Pesquisa(this.form)">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<input type="text" name=CELULAR size=14 maxlength=14 placeholder="(00)00000-0000">
+
+<br><br>
+
+<input type="button" value="Por nome " onClick="Pesquisa(this.form)">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<input type="text" name=NOME size=70 placeholder="Nome">
+
+
+<br><br>
+
+<textarea name=PESQUISA rows="5" cols="100"></textarea>
+
+<br><br><br>
+
+<input type="reset" value="Consultar outro cliente...">
+
+</form>
+
+</body>
+
+</html>

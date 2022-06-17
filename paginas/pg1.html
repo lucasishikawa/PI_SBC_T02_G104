@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<title>::Restaurante ARTE DO TEMPERO::</title>
+</head>
+
+<body>
+<center>
+
+<table>
+
+<tr>
+<h2>Restaurante ARTE DO TEMPERO</h2>
+</tr>
+
+<tr>
+
+<td width=70%>
+<p>Controle de Acessibilidade</p>
+</td>
+
+<td>
+<script language = "JavaScript">
+
+	var dataHora, xHora, xDia, dia, mes, ano, txtSaudacao;
+	dataHora = new Date;
+	xHora = dataHora.getHours();
+	if (xHora>=0 && xHora < 12)
+	{ txtSaudacao = "Bom Dia!"; }
+	if (xHora>=12 && xHora < 18)
+	{ txtSaudacao = "Boa Tarde!"; }
+	if (xHora>=18 && xHora < 24)
+	{ txtSaudacao = "Boa Noite!"; }
+	
+	xDia = dataHora.getDay();
+	diaSemana = new Array(7);
+	diaSemana[0] = "Domingo";
+	diaSemana[1] = "Segunda";
+	diaSemana[2] = "Terça";
+	diaSemana[3] = "Quarta";
+	diaSemana[4] = "Quinta";
+	diaSemana[5] = "Sexta";
+	diaSemana[6] = "Sábado";
+
+	dia = dataHora.getDate();
+	dia = dia.toString();
+	if (dia.length == 1)
+	{ dia = '0' + dia; }
+	mes = dataHora.getMonth() + 1;
+	mes = mes.toString();
+	if (mes.length == 1)
+	{ mes = '0' + mes; }
+	ano = dataHora.getFullYear();
+	
+document.write('<p align="center"><font size=4>' + txtSaudacao + '!!! ' + diaSemana[xDia] + ', ' + dia + '/' + mes + '/' + ano + '</font></p>');
+</script>
+</td>
+
+</tr>
+
+</table>
+
+</center>
+</body>
+</html>

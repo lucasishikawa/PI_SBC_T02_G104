@@ -1,0 +1,102 @@
+<html>
+
+<head>
+<title>::Restaurante ARTE DO TEMPERO::</title>
+
+<script language="JavaScript">
+function Verifica()
+{
+  var Nome = document.Formulario.NOME.value;
+  var Dn = document.Formulario.DN.value;
+  var Cel = document.Formulario.CELULAR.value;
+  var Endereco = document.Formulario.ENDERECO.value;
+  var Bairro = document.Formulario.BAIRRO.value;
+  var Cep = document.Formulario.CEP.value;
+  var Cidade = document.Formulario.CIDADE.value;
+  if (Nome == '' || Dn == '' || Cel == '' || Endereco == '' || Bairro == '' || Cep == '' || Cidade == '')
+    {
+      alert('Todos os campos do formulário devem estar preenchidos.');
+      return false;
+    }
+  else
+    {
+      alert("Cliente cadastrado com sucesso.");
+      document.Formulario.reset;
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="Formulario" onSubmit="return Verifica()" method="post" enctype="text/plain"> 
+
+<hr>
+<font color=#A52A2A size=3>Cadastro de Cliente</font>
+<hr>
+
+Nome:&nbsp;&nbsp;<input type="text" name=NOME size=70>
+
+<br><br>
+
+Data de Nascimento:&nbsp;&nbsp;<input type="text" name=DN size=10 maxlength=10 placeholder="dd/mm/aaaa">
+&nbsp;&nbsp;&nbsp;&nbsp;Sexo:&nbsp;&nbsp;
+<select name=SEXO>
+  <option selected value="Feminino">Feminino</option>
+  <option value="Masculino">Masculino</option>
+</select>
+
+<br><br>
+
+Celular:&nbsp;&nbsp;<input type="text" name=CELULAR size=14 maxlength=14 placeholder="(00)00000-0000">
+
+<br><br>
+
+End.:&nbsp;&nbsp;<input type="text" name=ENDERECO size=70 placeholder="Rua e Número">
+<br><br>
+Bairro:&nbsp;&nbsp;<input type="text" name=BAIRRO size=30>
+&nbsp;&nbsp;&nbsp;&nbsp;CEP:&nbsp;&nbsp;<input type="text" name=CEP size=10 maxlength=9 palceholder="00000-000">
+<br><br>
+Cidade:&nbsp;&nbsp;<input type="text" name=CIDADE size=35>&nbsp;&nbsp;
+Estado:&nbsp;&nbsp;
+<select name=ESTADO>
+  <option value="Acre">AC</option>
+  <option value="Amazonas">AM</option>
+  <option value="Amapá">AP</option>
+  <option value="Alagoas">AL</option>
+  <option value="Bahia">BA</option>
+  <option value="Rondônia">RO</option>
+  <option value="Roraima">RR</option>
+  <option value="Maranhão">MA</option>
+  <option value="Piauí">PI</option>
+  <option value="Ceará">CE</option>
+  <option value="Rio Grande do Norte">RN</option>
+  <option value="Paraíba">PB</option>
+  <option value="Pernambuco">PE</option>
+  <option value="Sergipe">SE</option>
+  <option value="Tocantins">TO</option>
+  <option value="Goiás">GO</option>
+  <option value="Mato Grosso">MT</option>
+  <option value="Mato Grosso do Sul">MS</option>
+  <option value="Pará">PA</option>
+  <option selected value="São Paulo">SP</option>
+  <option value="Minas Gerais">MG</option>
+  <option value="Espírito Santo">ES</option>
+  <option value="Rio de Janeiro">RJ</option>
+  <option value="Paraná">PR</option>
+  <option value="Santa Catarina">SC</option>
+  <option value="Rio Grande do Sul">RS</option>
+</select>
+
+<br><br>
+
+<input type="reset" value="Limpar">
+<input type="submit" value="Enviar">
+
+</form>
+
+</body>
+
+</html>

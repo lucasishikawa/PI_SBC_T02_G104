@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<title>::Restaurante ARTE DO TEMPERO::</title>
+
+<script language="JavaScript">
+function Verifica()
+{
+  var Descricao = document.Formulario.DESCRICAO.value;
+  var Valor = document.Formulario.VALOR.value;
+  if (Descricao == '' || Valor == '')
+    {
+      alert('Todos os campos do formulário devem estar preenchidos.');
+      return false;
+    }
+  else
+    {
+      alert("Produto cadastrado com sucesso.");
+      document.Formulario.reset;
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="Formulario" onSubmit="return Verifica()" method="post" enctype="text/plain"> 
+
+<hr>
+<font color=#A52A2A size=3>Cadastro de Produto</font>
+<hr>
+
+Descrição:<br>
+<textarea name=DESCRICAO rows="5" cols="100">Descreva o produto aqui...</textarea>
+
+<br><br>
+
+Valor:&nbsp;&nbsp;<input type="text" name=VALOR size=10 maxlength=10 placeholder="0,00">
+
+<br><br>
+
+<input type="reset" value="Limpar">
+<input type="submit" value="Enviar">
+
+</form>
+
+</body>
+
+</html>

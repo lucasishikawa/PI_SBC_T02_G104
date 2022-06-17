@@ -1,0 +1,84 @@
+<html>
+
+<head>
+<title>::Restaurante ARTE DO TEMPERO::</title>
+
+<script language="JavaScript">
+function Verifica1()
+{
+  var Celular = document.Formulario.CELULAR.value;
+  if (Celular == '')
+    {
+      alert('Informe um número válido...');
+      return false;
+    }
+  else
+    {
+      document.Formulario.NOME.value = "Bruna";
+    }
+}
+
+function Verifica2()
+{
+  var Nome = document.Formulario.NOME.value;
+  var Prato = document.Formulario.PRATO.value;
+  if (Nome == '' || Prato == '')
+    {
+      alert('O pedido deve conter um prato selecionado.');
+      return false;
+    }
+  else
+    {
+      alert('Pedido enviado para cozinha.');
+      document.Formulario.reset;
+    }
+}
+
+</script>
+</head>
+
+<body>
+  
+<form name="Formulario" onSubmit="return Verifica2()" method="post" enctype="text/plain"> 
+
+<hr>
+<font color=#A52A2A size=3>Cadastro de Pedido</font>
+<hr>
+
+Celular:&nbsp;&nbsp;<input type="text" name=CELULAR size=14 maxlength=14 placeholder="(00)00000-0000">
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Consultar" onClick="Verifica1(this.form)">
+
+<br><br><br>
+
+Cliente:&nbsp;&nbsp;<input type="text" name=NOME size=70>
+
+<br><br>
+
+Prato escolhido:&nbsp;&nbsp;
+<select name=PRATO>
+  <option value=""></option>
+  <option value="Virado à Paulista">Virado à Paulista</option>
+  <option value="Bife de Fígado Acebolado">Bife de Fígado Acebolado</option>
+  <option value="Tilápia à Milanesa">Tilápia à Milanesa</option>
+  <option value="Panqueca">Panqueca</option>
+  <option value="Picadinho de Carne">Picadinho de Carne</option>
+</select>
+
+<br><br>
+
+Porção Extra:&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type = "checkbox" name ="PorcaoExtra1"/>Ovo
+<input type = "checkbox" name ="PorcaoExtra2"/>Salada
+<input type = "checkbox" name ="PorcaoExtra3"/>Farofa
+
+<br><br>
+
+<input type="reset" value="Limpar">
+<input type="submit" value="Salvar Pedido">
+
+</form>
+
+</body>
+
+</html>
