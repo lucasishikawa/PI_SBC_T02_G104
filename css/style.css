@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dados {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 92%;
+  height: 100vh;
+}
+
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("../font/LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "BlackRavens";
+  src: url("../font/BlackRavens.ttf");
+}
+
+body,
+input[type="text"],
+textarea,
+select,
+text {
+  background-color: rgb(251, 252, 253);
+}
+
+.grupo {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.tabular {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.divide {
+  display: flex;
+  width: 180px;
+}
+
+.desc {
+  width: 100vh;
+  text-align: right;
+  margin-right: 10px;
+  justify-content: start;
+}
+
+.entradaGrande {
+  position: relative;
+  width: 85%;
+}
+
+.textoMax {
+  position: relative;
+  width: 95%;
+}
+
+.entradaDivide {
+  display: flex;
+}
+
+.entradaPequena {
+  width: 60%;
+}
+
+.entradaBt {
+  max-width: 60%;
+  width: 50%;
+  max-width: 30%;
+}
+
+.btForm {
+  width: 5rem;
+}
+
+.entrada {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 80%;
+}
+
+.busca {
+  margin-top: -18px;
+}
+
+.envio {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nomeForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-right: 1vw;
+}
+
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.menu{
+  font-size: 20px;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+
+h6{
+  padding-top: 10px;
+}
+
+.navbar{
+  background-color: #298A08;
+}
+
+.cor4{
+  color:white;
+}
+
+.margin{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.bg-footer{
+  background-color: #555555;
+  color: white;
+}
+
+.quem-somos {
+  display: none;
+}
+
+.servicos {
+  display: none;
+}
+
+.parceiros {
+  display: none;
+}
+
+.barra{
+  background-color: #f5f5f5;
+  font-family: Lobster;
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+  border: 0;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, .85);
+  background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+.icon {
+  margin-right: 10px;
+}
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+.fw-semibold { font-weight: 600; }
+.lh-tight { line-height: 1.25; }

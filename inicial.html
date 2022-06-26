@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+		h2{
+			font-size: 1.9rem;
+			font-family: Lobster;
+			text-align: center;
+			margin: 0px;
+			padding: 0px;
+		}
+		h3{
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+		}
+		.sauda {
+			font-size: 15px;
+			margin: 0px;
+			padding: 0px;
+		}
+		.controle {
+			font-size: 15px;
+			margin: 0px;
+			padding: 0px;
+		}
+		.controle2 {
+			font-size: 15px;
+			margin: 0px;
+			padding: 0px;
+			margin-right: -28rem;
+			margin-left: -25rem;
+		}
+		.topo {
+			background: rgb(254,202,1);
+background: radial-gradient(circle, rgba(254,202,1,1) 0%, rgba(254,202,1,1) 1%, rgba(226,148,16,1) 100%);
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		left: 0;
+		}
+		.menu{
+			position: absolute;
+			justify-content: flex-start;
+			align-items: flex-start;
+			top: 15vh;
+			width: 20vh;
+			left: 0;
+			font-family: Lobster;
+		}
+		.leitor {
+			font-size: 0rem;
+		}
+		.miniatura {
+			font-size: 0.65rem;
+		}
+		.item {
+			font-family: Lobster;
+		}
+		</style>
+
+
+<title>::Restaurante ARTE DO TEMPERO::</title>
+</head>
+
+<body>
+
+
+
+<section id="topo" class="topo container-fluid" style="height: 15vh;">
+
+	<section id="section2">
+	<div class="container-fluid text-center align-items-center">
+		<div class="container">
+			<div class="row row-cols-3">
+				<div class="col-xs-4 order-2 col text-center align-self-center">
+					<div class="row">
+						<div class="d-none d-md-block col-xs-6">
+							<h2>ARTE DO TEMPERO</h2>
+						</div>
+						<div class="d-none d-lg-block col-xs-6">
+							<h3>Restaurante</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 order-1">
+					<p class="controle d-none d-sm-block">Controle de Acessibilidade</p>
+					<p class="controle2 d-block d-sm-none">Controle de Acessibilidade</p>
+				</div>
+				<div class="col-xs-4 order-3">
+					<script language = "JavaScript">
+
+					 var dataHora, xHora, xDia, dia, mes, ano, txtSaudacao;
+					 dataHora = new Date;
+					 xHora = dataHora.getHours();
+					 if (xHora>=0 && xHora < 12)
+					 { txtSaudacao = "Bom Dia!"; }
+					 if (xHora>=12 && xHora < 18)
+					 { txtSaudacao = "Boa Tarde!"; }
+					 if (xHora>=18 && xHora < 24)
+					 { txtSaudacao = "Boa Noite!"; }
+
+					 xDia = dataHora.getDay();
+					 diaSemana = new Array(7);
+					 diaSemana[0] = "Domingo";
+					 diaSemana[1] = "Segunda";
+					 diaSemana[2] = "Terça";
+					 diaSemana[3] = "Quarta";
+					 diaSemana[4] = "Quinta";
+					 diaSemana[5] = "Sexta";
+					 diaSemana[6] = "Sábado";
+
+					 dia = dataHora.getDate();
+					 dia = dia.toString();
+					 if (dia.length == 1)
+					 { dia = '0' + dia; }
+					 mes = dataHora.getMonth() + 1;
+					 mes = mes.toString();
+					 if (mes.length == 1)
+					 { mes = '0' + mes; }
+					 ano = dataHora.getFullYear();
+
+					document.write('<div class="row"><div class="d-none d-sm-block col-xs-6"><p class="sauda" align="right">' + txtSaudacao + '!! </font></p></div><div class="d-none d-md-block col-xs-6"><p class="sauda" align="right">' + diaSemana[xDia] + ', ' + dia + '/' + mes + '/' + ano + '</font></p></div></div>');
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</section>
+
+<section class="menu">
+
+  <div class="barra d-flex flex-column flex-shrink-0 p-2" style="width: 20vw; height: 85vh;">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            <div class="item d-none d-sm-block">Cadastro</div><div class="d-block d-sm-none miniatura">Cadastro</div>
+          </button>
+          <div class="navbar-collapse show" id="home-collapse">
+                    <ul class="navbar-nav btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li class="nav-item"><a href="form1.html" target="alvo" class="nav-link link-dark rounded"><img class="icon" src="img/clientes.png" alt="" width="24" height="24"><div class="item d-none d-sm-block"> Clientes</div><div class="d-block d-sm-none leitor">Clientes</div></a></li>
+                      <li class="nav-item"><a href="form2.html" target="alvo" class="nav-link link-dark rounded text-decoration-none"><img class="icon" src="img/produtos.png" alt="" width="24" height="24"><div class="item d-none d-sm-block"> Produtos</div><div class="d-block d-sm-none leitor"> Produtos</div></a></li>
+                      <li class="nav-item"><a href="form3.html" target="alvo" class="nav-link link-dark rounded text-decoration-none"><img class="icon" src="img/pedidos.png" alt="" width="24" height="24"><div class="item d-none d-sm-block"> Pedidos</div><div class="d-block d-sm-none leitor">Pedidos</div></a></li>
+                    </ul>
+                  </div>
+        </li>
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+          <div class="item d-none d-sm-block">Consultas</div><div class="d-block d-sm-none miniatura">Consultas</div>
+        </button>
+        <div class="navbar-collapse show" id="dashboard-collapse">
+          <ul class="navbar-nav btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li class="nav-item"><a href="form4.html" target="alvo" class="nav-link link-dark rounded text-decoration-none"><img class="icon" src="img/clientes.png" alt="" width="24" height="24"><div class="item teste d-none d-sm-block"> Clientes</div><div class="d-block d-sm-none leitor">Clientes</div></a></li>
+            <li class="nav-item"><a href="form5.html" target="alvo" class="nav-link link-dark rounded text-decoration-none"><img class="icon" src="img/pedidos.png" alt="" width="24" height="24"><div class="item d-none d-sm-block"> Pedidos</div><div class="d-block d-sm-none leitor">Pedidos</div></a></li>
+          </ul>
+        </div>
+        </li>
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+          <div class="item d-none d-sm-block">Relatório</div><div class="d-block d-sm-none miniatura">Relatório</div>
+        </button>
+        <div class="navbar-collapse show" id="orders-collapse">
+          <ul class="navbar-nav btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li class="nav-item"><a href="form6.html" target="alvo" class="nav-link link-dark rounded text-decoration-none"><img class="icon" src="img/dia.png" alt="" width="24" height="24"><div class="item d-none d-sm-block"> Diário</div><div class="d-block d-sm-none leitor">Diário</div></a></li>
+            <li class="nav-item"><a href="form7.html" target="alvo" class="nav-link link-dark rounded text-decoration-none"><img class="icon" src="img/mes.png" alt="" width="24" height="24"><div class="item d-none d-sm-block"> Mensal</div><div class="d-block d-sm-none leitor">Mensal</div></a></li>
+          </ul>
+        </div>
+        </li>
+      </ul>
+    </div>
+</section>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/sidebars.js"></script>
+
+
+<script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "748Lz5cpfb");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+</body>
+
+</html>

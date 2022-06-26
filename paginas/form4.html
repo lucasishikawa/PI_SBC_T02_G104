@@ -1,7 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
 <head>
-<title>::Restaurante ARTE DO TEMPERO::</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>Restaurante ARTE DO TEMPERO</title>
 
 <script language="JavaScript">
 function Pesquisa()
@@ -13,7 +17,7 @@ function Pesquisa()
       alert('Informe um dos dados para a pesquisa.');
       return false;
     }
-  else 
+  else
     {
       if (Nome !== 'Bruna' || Cel !== '11984654657')
         {
@@ -25,39 +29,62 @@ function Pesquisa()
         }
     }
 }
-
+var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+window.addEventListener("scroll", scrollEventHandler, false);
 </script>
+
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+</style>
+
 </head>
 
 <body>
-  
-<form name="Formulario" method="post"> 
 
+<form name="Formulario" method="post">
+
+<hr><div class="nomeForm">
+<font color=#A52A2A size=3>Consulta cliente</font></div>
 <hr>
-<font color=#A52A2A size=3>Consulta cliente</font>
-<hr>
+</div>
 
-<br><br>
+<div class="tabular">
+<div class="divide">
+<div class="desc"><input type="button" value="Por celular" onClick="Pesquisa(this.form)">
+</div></div><div class="entrada">
+  <label for="CELULAR" class="form-label visually-hidden">Celular</label>
+  <input class="entradaGrande" type="text" name="CELULAR" id="CELULAR" size=14 maxlength=14 placeholder="(00)00000-0000">
+</div>
+</div>
 
-<input type="button" value="Por celular" onClick="Pesquisa(this.form)">&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;<input type="text" name=CELULAR size=14 maxlength=14 placeholder="(00)00000-0000">
+<div class="tabular">
+<div class="divide">
+<div class="desc"><input type="button" value="Por nome" onClick="Pesquisa(this.form)">
+</div></div><div class="entrada">
+  <label for="NOME" class="form-label visually-hidden">Nome</label>
+  <input class="entradaGrande" type="text" name="NOME" id="NOME" size=70 placeholder="Nome">
+</div>
+</div>
 
-<br><br>
+<div class="tabular">
+  <label for="PESQUISA" class="form-label visually-hidden">Pesquisa</label>
+<textarea class="textoMax" name=PESQUISA id="PESQUISA" rows="5" cols="100"></textarea>
+</div>
 
-<input type="button" value="Por nome " onClick="Pesquisa(this.form)">&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;<input type="text" name=NOME size=70 placeholder="Nome">
+<div class="tabular envio">
 
-
-<br><br>
-
-<textarea name=PESQUISA rows="5" cols="100"></textarea>
-
-<br><br><br>
 
 <input type="reset" value="Consultar outro cliente...">
 
-</form>
+</div>
 
+</form>
 </body>
 
 </html>
