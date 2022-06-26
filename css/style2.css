@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .menu{
   font-size: 20px;
   font-family: sans-serif;
@@ -5,11 +6,44 @@
   background-color: #f5f5f5;
 }
 
+=======
+body{
+  font-size: 20px;
+  font-family: sans-serif;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: #f5f5f5;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+h3{
+  padding-bottom: 50px;
+}
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
 
 h6{
   padding-top: 10px;
 }
 
+<<<<<<< HEAD
+=======
+p{
+  color:white;
+}
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
 .navbar{
   background-color: #298A08;
 }
@@ -18,16 +52,49 @@ h6{
   color:white;
 }
 
+<<<<<<< HEAD
+=======
+.quem-somos{
+  background-color: lightgrey;
+}
+
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
 .margin{
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
+<<<<<<< HEAD
+=======
+.parceiros{
+  background-color: lightblue;
+}
+
+.servicos{
+  background-color: lightpink;
+}
+
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
 .bg-footer{
   background-color: #555555;
   color: white;
 }
 
+<<<<<<< HEAD
+=======
+#section1 {
+  display: none;
+}
+
+#section2 {
+  display: none;
+}
+
+#section3 {
+  display: none;
+}
+
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
 .quem-somos {
   display: none;
 }
@@ -40,6 +107,19 @@ h6{
   display: none;
 }
 
+<<<<<<< HEAD
+=======
+.content {display:none;}
+
+.loader {
+    width:100vh;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
 .barra{
   background-color: #f5f5f5;
   font-family: Lobster;

@@ -18,6 +18,7 @@ body {
 }
 
 .dados {
+<<<<<<< HEAD
   display: flex;
   align-items: start;
   justify-content: center;
@@ -49,6 +50,35 @@ text {
   background-color: rgb(251, 252, 253);
 }
 
+=======
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     width: 92%;
+     height: 100vh;
+}
+
+ul, li{
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url("../font/LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BlackRavens";
+    src: url("../font/BlackRavens.ttf");
+}
+
+body, input[type="text"], textarea, select, text {
+  background-color: rgb(251, 252, 253);
+}
+
+
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
 .grupo {
   padding-top: 21px;
   padding-bottom: 21px;
@@ -64,11 +94,16 @@ text {
   padding: 0.2rem;
 }
 
+<<<<<<< HEAD
 .divide {
+=======
+.divide{
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
   display: flex;
   width: 180px;
 }
 
+<<<<<<< HEAD
 .desc {
   width: 100vh;
   text-align: right;
@@ -77,15 +112,31 @@ text {
 }
 
 .entradaGrande {
+=======
+.desc{
+  width: 100vh;
+  text-align: right;
+  margin-right: 10px;
+
+  justify-content: start;
+}
+
+.entradaGrande{
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
   position: relative;
   width: 85%;
 }
 
+<<<<<<< HEAD
 .textoMax {
+=======
+.textoMax{
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
   position: relative;
   width: 95%;
 }
 
+<<<<<<< HEAD
 .entradaDivide {
   display: flex;
 }
@@ -95,11 +146,23 @@ text {
 }
 
 .entradaBt {
+=======
+.entradaDivide{
+  display: flex;
+}
+
+.entradaPequena{
+  width: 60%;
+}
+
+.entradaBt{
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
   max-width: 60%;
   width: 50%;
   max-width: 30%;
 }
 
+<<<<<<< HEAD
 .btForm {
   width: 5rem;
 }
@@ -116,19 +179,42 @@ text {
 }
 
 .envio {
+=======
+.btForm{
+  width: 5rem;
+}
+
+.entrada{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   width: 80%;
+}
+
+.busca {
+  margin-top: -18px;  
+}
+
+.envio{
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
 }
 
+<<<<<<< HEAD
 .nomeForm {
+=======
+.nomeForm{
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
+<<<<<<< HEAD
 input[type="checkbox"] {
   margin-right: 1vw;
 }
@@ -249,3 +335,13 @@ h6{
 
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
+=======
+ input[type="checkbox"] {
+  margin-right: 1vw;
+}
+
+input[type="reset"], input[type="submit"], input[type="button"] {
+ padding-left: 5px;
+ padding-right: 5px;
+}
+>>>>>>> fab5c3a97255f491d0ca8d32ce9dcb0679c04ca8
