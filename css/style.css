@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dados {
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     width: 92%;
+     height: 100vh;
+}
+
+ul, li{
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url("../font/LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BlackRavens";
+    src: url("../font/BlackRavens.ttf");
+}
+
+body, input[type="text"], textarea, select, text {
+  background-color: rgb(251, 252, 253);
+}
+
+
+.grupo {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.tabular {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.divide{
+  display: flex;
+  width: 180px;
+}
+
+.desc{
+  width: 100vh;
+  text-align: right;
+  margin-right: 10px;
+
+  justify-content: start;
+}
+
+.entradaGrande{
+  position: relative;
+  width: 85%;
+}
+
+.textoMax{
+  position: relative;
+  width: 95%;
+}
+
+.entradaDivide{
+  display: flex;
+}
+
+.entradaPequena{
+  width: 60%;
+}
+
+.entradaBt{
+  max-width: 60%;
+  width: 50%;
+  max-width: 30%;
+}
+
+.btForm{
+  width: 5rem;
+}
+
+.entrada{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   width: 80%;
+}
+
+.busca {
+  margin-top: -18px;  
+}
+
+.envio{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nomeForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ input[type="checkbox"] {
+  margin-right: 1vw;
+}
+
+input[type="reset"], input[type="submit"], input[type="button"] {
+ padding-left: 5px;
+ padding-right: 5px;
+}

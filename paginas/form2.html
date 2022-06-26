@@ -1,7 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
 <head>
-<title>::Restaurante ARTE DO TEMPERO::</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>Restaurante ARTE DO TEMPERO</title>
 
 <script language="JavaScript">
 function Verifica()
@@ -10,7 +14,7 @@ function Verifica()
   var Valor = document.Formulario.VALOR.value;
   if (Descricao == '' || Valor == '')
     {
-      alert('Todos os campos do formul·rio devem estar preenchidos.');
+      alert('Todos os campos do formul√°rio devem estar preenchidos.');
       return false;
     }
   else
@@ -18,31 +22,48 @@ function Verifica()
       alert("Produto cadastrado com sucesso.");
       document.Formulario.reset;
     }
+    var scrollEventHandler = function()
+    {
+      window.scroll(0, window.pageYOffset)
+    }
+    window.addEventListener("scroll", scrollEventHandler, false);
 }
 
 </script>
 
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+</style>
 </head>
 
 <body>
 
-<form name="Formulario" onSubmit="return Verifica()" method="post" enctype="text/plain"> 
+<form name="Formulario" onSubmit="return Verifica()" method="post" enctype="text/plain">
 
+<hr><div class="nomeForm">
+<font color=#A52A2A size=3>Cadastro de Produto</font></div>
 <hr>
-<font color=#A52A2A size=3>Cadastro de Produto</font>
-<hr>
 
-DescriÁ„o:<br>
-<textarea name=DESCRICAO rows="5" cols="100">Descreva o produto aqui...</textarea>
+<div class="tabular">
+<div class="divide">
+<div class="desc">Descri√ß√£o:
+</div></div><div class="entrada"><textarea class="entradaGrande" name=DESCRICAO rows="5" cols="100">Descreva o produto aqui...</textarea>
+</div>
+</div>
 
-<br><br>
-
-Valor:&nbsp;&nbsp;<input type="text" name=VALOR size=10 maxlength=10 placeholder="0,00">
-
-<br><br>
-
+<div class="tabular">
+<div class="divide">
+<div class="desc">Valor:
+</div></div><div class="entrada"><input class="entradaPequena" type="text" name=VALOR size=10 maxlength=10 placeholder="0,00">
+</div>
+</div>
+<div class="tabular envio">
 <input type="reset" value="Limpar">
 <input type="submit" value="Enviar">
+</div>
 
 </form>
 

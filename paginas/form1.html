@@ -1,7 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
 <head>
-<title>::Restaurante ARTE DO TEMPERO::</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>Restaurante ARTE DO TEMPERO</title>
 
 <script language="JavaScript">
 function Verifica()
@@ -15,7 +19,7 @@ function Verifica()
   var Cidade = document.Formulario.CIDADE.value;
   if (Nome == '' || Dn == '' || Cel == '' || Endereco == '' || Bairro == '' || Cep == '' || Cidade == '')
     {
-      alert('Todos os campos do formul·rio devem estar preenchidos.');
+      alert('Todos os campos do formul√°rio devem estar preenchidos.');
       return false;
     }
   else
@@ -23,79 +27,161 @@ function Verifica()
       alert("Cliente cadastrado com sucesso.");
       document.Formulario.reset;
     }
+
+    var scrollEventHandler = function()
+    {
+      window.scroll(0, window.pageYOffset)
+    }
+    window.addEventListener("scroll", scrollEventHandler, false);
+
 }
 
 </script>
+
+
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+</style>
 
 </head>
 
 <body>
 
-<form name="Formulario" onSubmit="return Verifica()" method="post" enctype="text/plain"> 
+<div class="dados">
 
+<form name="Formulario" onSubmit="return Verifica()" method="post" enctype="text/plain">
+
+<hr><div class="nomeForm">
+<font color=#A52A2A size=3>Cadastro de Cliente</font></div>
 <hr>
-<font color=#A52A2A size=3>Cadastro de Cliente</font>
-<hr>
-
-Nome:&nbsp;&nbsp;<input type="text" name=NOME size=70>
-
-<br><br>
-
-Data de Nascimento:&nbsp;&nbsp;<input type="text" name=DN size=10 maxlength=10 placeholder="dd/mm/aaaa">
-&nbsp;&nbsp;&nbsp;&nbsp;Sexo:&nbsp;&nbsp;
-<select name=SEXO>
+<div class="tabular">
+<div class="divide">
+<div class="desc">
+Nome:</div></div><div class="entrada"><input class="entradaGrande" type="text" name="NOME" id="NOME" size=70 width="300px">
+</div>
+</div>
+<div class="tabular"><div class="divide">
+<div class="desc">
+Data de Nascimento:</div></div><div class="entrada"><input class="entradaPequena" type="text" name="DN" id="DN" size=10 maxlength=10 placeholder="dd/mm/aaaa">
+</div>
+</div>
+<div class="tabular"><div class="divide">
+<div class="desc">
+Sexo:</div></div><div class="entrada">
+<select class="entradaPequena" name="SEXO" id="SEXO">
   <option selected value="Feminino">Feminino</option>
   <option value="Masculino">Masculino</option>
-</select>
-
-<br><br>
-
-Celular:&nbsp;&nbsp;<input type="text" name=CELULAR size=14 maxlength=14 placeholder="(00)00000-0000">
-
-<br><br>
-
-End.:&nbsp;&nbsp;<input type="text" name=ENDERECO size=70 placeholder="Rua e N˙mero">
-<br><br>
-Bairro:&nbsp;&nbsp;<input type="text" name=BAIRRO size=30>
-&nbsp;&nbsp;&nbsp;&nbsp;CEP:&nbsp;&nbsp;<input type="text" name=CEP size=10 maxlength=9 palceholder="00000-000">
-<br><br>
-Cidade:&nbsp;&nbsp;<input type="text" name=CIDADE size=35>&nbsp;&nbsp;
-Estado:&nbsp;&nbsp;
-<select name=ESTADO>
-  <option value="Acre">AC</option>
-  <option value="Amazonas">AM</option>
-  <option value="Amap·">AP</option>
-  <option value="Alagoas">AL</option>
-  <option value="Bahia">BA</option>
-  <option value="RondÙnia">RO</option>
-  <option value="Roraima">RR</option>
-  <option value="Maranh„o">MA</option>
-  <option value="PiauÌ">PI</option>
-  <option value="Cear·">CE</option>
-  <option value="Rio Grande do Norte">RN</option>
-  <option value="ParaÌba">PB</option>
-  <option value="Pernambuco">PE</option>
-  <option value="Sergipe">SE</option>
-  <option value="Tocantins">TO</option>
-  <option value="Goi·s">GO</option>
-  <option value="Mato Grosso">MT</option>
-  <option value="Mato Grosso do Sul">MS</option>
-  <option value="Par·">PA</option>
-  <option selected value="S„o Paulo">SP</option>
-  <option value="Minas Gerais">MG</option>
-  <option value="EspÌrito Santo">ES</option>
-  <option value="Rio de Janeiro">RJ</option>
-  <option value="Paran·">PR</option>
-  <option value="Santa Catarina">SC</option>
-  <option value="Rio Grande do Sul">RS</option>
-</select>
-
-<br><br>
-
+</select></div>
+</div>
+<div class="tabular"><div class="divide">
+  <div class="desc">
+Celular:</div></div><div class="entrada"><input class="entradaPequena" type="text" name="CELULAR" id="CELULAR" size=14 maxlength=14 placeholder="(00)00000-0000">
+  </div>
+</div>
+<div class="tabular"><div class="divide">
+    <div class="desc">
+CEP:</div></div><div class="entrada"><input  class="entradaPequena" type="text" name="CEP" id="CEP" size=10 maxlength=9 placeholder="00000-000">
+</div></div>
+<div class="tabular"><div class="divide">
+<div class="desc">
+End.:</div></div><div class="entrada"><input  class="entradaGrande" type="text" name="ENDERECO" id="ENDERECO" size=70 placeholder="Rua e N√∫mero">
+</div></div>
+<div class="tabular"><div class="divide">
+  <div class="desc">
+Bairro:</div></div><div class="entrada"><input  class="entradaGrande" type="text" name="BAIRRO" id="BAIRRO" size=22>
+</div>
+</div>
+<div class="tabular"><div class="divide"><div class="desc">
+Cidade:</div></div><div class="entrada"><input  class="entradaGrande" type="text" name="CIDADE" id="CIDADE" size=35>
+</div></div>
+<div class="tabular"><div class="divide">
+  <div class="desc">
+Estado:</div></div><div class="entrada">
+<input class="entradaPequena" type="text" name="ESTADO" id="ESTADO" size=2 maxlength=2 placeholder="xx">
+</div></div>
+<div class="tabular envio">
 <input type="reset" value="Limpar">
 <input type="submit" value="Enviar">
 
 </form>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+var rua='#ENDERECO';
+var bairro='#BAIRRO';
+var cidade='#CIDADE';
+var uf='#ESTADO';
+var cep='#CEP';
+
+/* CODIGO BRUTO */
+var $jq = jQuery.noConflict();
+$jq(document).ready(function() {
+
+function limpa_formul√°rio_cep() {
+// Limpa valores do formul√°rio de cep.
+$jq(ENDERECO).val('');
+$jq(BAIRRO).val('');
+$jq(CIDADE).val('');
+$jq(ESTADO).val('');
+$jq(CEP).val('');
+}
+
+//Quando o campo cep perde o foco.
+$jq(CEP).blur(function() {
+//Nova vari√°vel "cep" somente com d√≠gitos.
+var cepx = $jq(this).val().replace(/\D/g, '');
+
+//Verifica se campo cep possui valor informado.
+if (cepx !='') {
+//Express√£o regular para validar o CEP.
+var validacep = /^[0-9]{8}$/;
+//Valida o formato do CEP.
+if(validacep.test(cepx)) {
+//Preenche os campos com "..." enquanto consulta webservice.
+$jq(ENDERECO).val('...carregando');
+$jq(BAIRRO).val('...carregando');
+$jq(CIDADE).val('...carregando');
+$jq(ESTADO).val('...carregando');
+
+//Consulta o webservice viacep.com.br/
+$jq.getJSON('https://viacep.com.br/ws/'+ cepx +'/json/?callback=?', function(dados) {
+if (!('erro' in dados)) {
+//Atualiza os campos com os valores da consulta.
+$jq(ENDERECO).val(dados.logradouro);
+$jq(BAIRRO).val(dados.bairro);
+$jq(CIDADE).val(dados.localidade);
+$jq(ESTADO).val(dados.uf);
+} //end if.
+else {
+//CEP pesquisado n√£o foi encontrado.
+limpa_formul√°rio_cep();
+alert('CEP n√£o encontrado.');
+}
+});
+} //end if.
+else {
+//cep √© inv√°lido.
+limpa_formul√°rio_cep();
+alert('Formato de CEP inv√°lido.');
+}
+} //end if.
+else {
+//cep sem valor, limpa formul√°rio.
+limpa_formul√°rio_cep();
+}
+});
+});
+</script>
+
+</div>
+
+
+
+
 
 </body>
 

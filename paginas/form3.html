@@ -1,7 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
 <head>
-<title>::Restaurante ARTE DO TEMPERO::</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<title> Restaurante ARTE DO TEMPERO</title>
 
 <script language="JavaScript">
 function Verifica1()
@@ -34,28 +38,50 @@ function Verifica2()
     }
 }
 
+var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+window.addEventListener("scroll", scrollEventHandler, false);
 </script>
+
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+</style>
+
 </head>
 
 <body>
-  
-<form name="Formulario" onSubmit="return Verifica2()" method="post" enctype="text/plain"> 
 
+<form name="Formulario" onSubmit="return Verifica2()" method="post" enctype="text/plain">
+
+<hr><div class="nomeForm">
+<font color=#A52A2A size=3>Cadastro de Pedido</font></div>
 <hr>
-<font color=#A52A2A size=3>Cadastro de Pedido</font>
-<hr>
 
-Celular:&nbsp;&nbsp;<input type="text" name=CELULAR size=14 maxlength=14 placeholder="(00)00000-0000">
-&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Consultar" onClick="Verifica1(this.form)">
+<div class="tabular">
+<div class="divide">
+<div class="desc">Celular:
+</div></div><div class="entrada"><input class="entradaPequena" type="text" name=CELULAR size=14 maxlength=14 placeholder="(00)00000-0000"></div></div>
+<div class="tabular">
+<div class="divide"><div class="desc"></div></div><div class="entrada">
+<input class="entradaPequena busca" type="button" value="Busca" onClick="Verifica1(this.form)">
+</div></div>
 
-<br><br><br>
+<div class="tabular">
+<div class="divide">
+<div class="desc">Cliente:
+</div></div><div class="entrada"><input class="entradaGrande" type="text" name=NOME size=70>
+</div>
+</div>
 
-Cliente:&nbsp;&nbsp;<input type="text" name=NOME size=70>
-
-<br><br>
-
-Prato escolhido:&nbsp;&nbsp;
-<select name=PRATO>
+<div class="tabular">
+<div class="divide">
+<div class="desc">Prato escolhido:
+</div></div><div class="entrada"><select name=PRATO class="entradaGrande">
   <option value=""></option>
   <option value="Virado à Paulista">Virado à Paulista</option>
   <option value="Bife de Fígado Acebolado">Bife de Fígado Acebolado</option>
@@ -63,19 +89,24 @@ Prato escolhido:&nbsp;&nbsp;
   <option value="Panqueca">Panqueca</option>
   <option value="Picadinho de Carne">Picadinho de Carne</option>
 </select>
+</div>
+</div>
 
-<br><br>
+<div class="tabular">
+<div class="divide">
+<div class="desc">Porção Extra:
+</div></div><div class="entrada"><ul style="list-style-type:none;"><li><input id="cb1" class="check1" type = "checkbox" name ="PorcaoExtra1"/>Ovo</li><li>
+<input id="cb2" class="check2" type = "checkbox" name ="PorcaoExtra2"/>Salada</li><li>
+<input id="cb3" class="check3" type = "checkbox" name ="PorcaoExtra3"/>Farofa</li></ul>
+</div>
+</div>
 
-Porção Extra:&nbsp;&nbsp;&nbsp;&nbsp;
 
-<input type = "checkbox" name ="PorcaoExtra1"/>Ovo
-<input type = "checkbox" name ="PorcaoExtra2"/>Salada
-<input type = "checkbox" name ="PorcaoExtra3"/>Farofa
 
-<br><br>
-
+<div class="tabular envio">
 <input type="reset" value="Limpar">
 <input type="submit" value="Salvar Pedido">
+</div>
 
 </form>
 
